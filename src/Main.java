@@ -23,7 +23,7 @@ public class Main {
     }
 
     static boolean checkString(String str) throws Exception {
-        String regex = "(\\d{1}|10)\\s*[\\+\\-\\*\\/]\\s*(\\d{1}|10)";
+        String regex = "([1-9]|10)\\s*[\\+\\-\\*\\/]\\s*([1-9]|10)";
 
         if(Pattern.matches(regex, str)==true)
             return true;
