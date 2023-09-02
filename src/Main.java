@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("Введите арифметическое выражение, для выхода введите \"end\":");
         Scanner in = new Scanner(System.in);
         String str = "";
@@ -13,11 +13,11 @@ public class Main {
                 break;
             }
             else {
-                try {
+                //try {
                     System.out.println(calc(str));
-                } catch (Exception e) {
-                    System.out.println("throws Exception");
-                }
+                //} catch (Exception e) {
+                  //  System.out.println("throws Exception");
+                //}
             }
         }
     }
